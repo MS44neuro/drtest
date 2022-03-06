@@ -1,4 +1,4 @@
-# pyDRtest:
+# drtest:
 ## _Data reduction test module_
 
 This is a test module that can perform data reduction in several ways.
