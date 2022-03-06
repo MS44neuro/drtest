@@ -1,0 +1,7 @@
+README.md
+setup.py
+drtest.egg-info/PKG-INFO
+drtest.egg-info/SOURCES.txt
+drtest.egg-info/dependency_links.txt
+drtest.egg-info/requires.txt
+drtest.egg-info/top_level.txt
