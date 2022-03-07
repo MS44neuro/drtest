@@ -21,7 +21,7 @@ Importing:
 ```sh
 import drtest as dr
 ```
-Use the DataAnalysis class for some xdata, ydata:
+Use the DataAnalysis class:
 ```sh
 da = dr.DataAnalysis(xdata, ydata)
 ```
