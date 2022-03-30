@@ -86,12 +86,8 @@ and are ready to import your first project.
 
 Welcome!
 
-.. figure:: /_static/images/tutorial/rtd-empty-dashboard.png
-   :width: 80%
-   :align: center
-   :alt: Read the Docs empty dashboard
+[![na-act-1.png](https://i.postimg.cc/8zJ7W6Vp/na-act-1.png)](https://postimg.cc/sMzfC1Xq)
 
-   Read the Docs empty dashboard
 
 .. note::
 
