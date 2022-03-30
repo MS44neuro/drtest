@@ -1,16 +1,11 @@
 Read the Docs tutorial
 ======================
 
-In this tutorial you will create a documentation project on Read the Docs
+In this tutorial you will create a documentation project on ....
 by importing an Sphinx project from a GitHub repository,
 tailor its configuration, and explore several useful features of the platform.
 
-The tutorial is aimed at people interested in learning
-how to use Read the Docs to host their documentation projects.
-You will fork a fictional software library
-similar to the one developed in the :doc:`official Sphinx tutorial <sphinx:tutorial/index>`.
-No prior experience with Sphinx is required,
-and you can follow this tutorial without having done the Sphinx one.
+
 
 The only things you will need to follow are
 a web browser, an Internet connection, and a GitHub account
@@ -25,18 +20,7 @@ Preparing your project on GitHub
 
 To start, `sign in to GitHub <https://github.com/login>`_
 and navigate to `the tutorial GitHub template <https://github.com/readthedocs/tutorial-template/>`_,
-where you will see a green :guilabel:`Use this template` button.
-Click it to open a new page that will ask you for some details:
 
-* Leave the default "Owner", or change it to something better for a tutorial project.
-* Introduce an appropriate "Repository name", for example ``rtd-tutorial``.
-* Make sure the project is "Public", rather than "Private".
-
-After that, click on the green :guilabel:`Create repository from template` button,
-which will generate a new repository on your personal account
-(or the one of your choosing).
-This is the repository you will import on Read the Docs,
-and it contains the following files:
 
 ``README.rst``
   Basic description of the repository, you will leave it untouched.
@@ -510,15 +494,7 @@ Done!
 Modifying versions
 ~~~~~~~~~~~~~~~~~~
 
-Both ``latest`` and ``stable`` are now *active*, which means that
-they are visible for users, and new builds can be triggered for them.
-In addition to these, Read the Docs also created an *inactive* ``1.0.x``
-version, which will always point to the ``1.0.x`` branch of your repository.
-
-.. figure:: /_static/images/tutorial/inactive-versions.png
-   :width: 80%
-   :align: center
-   :alt: List of inactive versions of the project
+:alt: List of inactive versions of the project
 
    List of inactive versions of the project
 
@@ -542,32 +518,7 @@ Show a warning for old versions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When your project matures, the number of versions might increase.
-Sometimes you will want to warn your readers
-when they are browsing an old or outdated version of your documentation.
 
-To showcase how to do that, let's create a ``2.0`` version of the code:
-navigate to your GitHub repository, click on the branch selector,
-type ``2.0.x``, and click on "Create branch: 2.0.x from 'main'".
-This will trigger two things:
-
-- Since ``2.0.x`` is your newest branch, ``stable`` will switch to tracking it.
-- A new ``2.0.x`` version will be created on your Read the Docs project.
-- Since you already have an active ``stable`` version, ``2.0.x`` will be activated.
-
-From this point, ``1.0.x`` version is no longer the most up to date one.
-To display a warning to your readers, go to the :guilabel:`⚙ Admin` menu of your project home,
-click on the :guilabel:`Advanced Settings` link on the left,
-enable the "Show version warning" checkbox, and click the :guilabel:`Save` button.
-
-If you now browse the ``1.0.x`` documentation, you will see a warning on top
-encouraging you to browse the latest version instead. Neat!
-
-.. figure:: /_static/images/tutorial/old-version-warning.png
-   :width: 80%
-   :align: center
-   :alt: Warning for old versions
-
-   Warning for old versions
 
 Getting insights from your projects
 -----------------------------------
@@ -584,106 +535,4 @@ Read the Docs offers you some analytics tools to find out the answers.
 Browsing Traffic Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :doc:`/analytics` view shows the top viewed documentation pages of the past 30 days,
-plus a visualization of the daily views during that period.
-To generate some artificial views on your newly created project,
-you can first click around the different pages of your project,
-which will be accounted immediately for the current day statistics.
-
-To see the Traffic Analytics view, go back the :term:`project page` again,
-click on the :guilabel:`⚙ Admin` button,
-and then click on the :guilabel:`Traffic Analytics` section.
-You will see the list of pages in descending order of visits,
-as well as a plot similar to the one below.
-
-.. figure:: /_static/images/tutorial/traffic-analytics-plot.png
-   :width: 80%
-   :align: center
-   :alt: Traffic Analytics plot
-
-   Traffic Analytics plot
-
-.. note::
-
-   The Traffic Analytics view explained above gives you a simple overview
-   of how your readers browse your documentation. It has the advantage that
-   it stores no identifying information about your visitors,
-   and therefore it respects their privacy.
-   However, you might want to get more detailed data by
-   :ref:`enabling Google Analytics <analytics:Enabling Google Analytics on your Project>`.
-   Notice though that we take some extra measures to :ref:`respect user
-   privacy <advertising/advertising-details:analytics>`
-   when they visit projects that have Google Analytics enabled,
-   and this might reduce the number of visits counted.
-
-Finally, you can also download this data for closer inspection.
-To do that, scroll to the bottom of the page
-and click on the :guilabel:`Download all data` button.
-That will prompt you to download a :abbr:`CSV (Comma-Separated Values)` file
-that you can process any way you want.
-
-Browsing Search Analytics
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Apart from traffic analytics, Read the Docs also offers the possibility
-to inspect :ref:`what search terms your readers use <server-side-search:Search Analytics>`
-on your documentation.
-This can inform decisions on what areas to reinforce,
-or what parts of your project are less understood or more difficult to find.
-
-To generate some artificial search statistics on the project,
-go to the HTML documentation, locate the Sphinx search box on the left,
-type ``ingredients``, and press the :kbd:`Enter` key.
-You will be redirected to the search results page, which will show two entries.
-
-Next, go back to the :guilabel:`⚙ Admin` section of your project page,
-and then click on the :guilabel:`Search Analytics` section.
-You will see a table with the most searched queries
-(including the ``ingredients`` one you just typed),
-how many results did each query return, and how many times it was searched.
-Below the queries table, you will also see a visualization
-of the daily number of search queries during the past 30 days.
-
-.. figure:: /_static/images/tutorial/search-analytics-terms.png
-   :width: 80%
-   :align: center
-   :alt: Most searched terms
-
-   Most searched terms
-
-Like the Traffic Analytics, you can also download the whole dataset in CSV format
-by clicking on the :guilabel:`Download all data` button.
-
-Where to go from here
----------------------
-
-This is the end of the tutorial. You started by forking a GitHub repository
-and importing it on Read the Docs, building its HTML documentation,
-and then went through a series of steps to customize the build process,
-tweak the project configuration, and add new versions.
-
-Here you have some resources to continue learning about documentation
-and Read the Docs:
-
-- You can learn more about the functionality of the platform
-  by going over our :doc:`/features` page.
-- To make the most of the documentation generators that are supported,
-  you can read the :doc:`Sphinx tutorial <sphinx:tutorial/index>`
-  or the `MkDocs User Guide <https://www.mkdocs.org/user-guide/>`_.
-- Whether you are a documentation author, a project administrator, a developer, or a designer,
-  you can follow our how-to guides that cover specific tasks,
-  available under :doc:`/guides/index`.
-- You can check out some of the
-  :ref:`index:Advanced features of Read the Docs`,
-  like :doc:`/subprojects` or :doc:`/automation-rules`, to name a few.
-- For private project support and other enterprise features,
-  you can use :doc:`our commercial service </commercial/index>`
-  (and if in doubt, check out :doc:`/choosing-a-site`).
-- Do you want to join a global community of fellow `documentarians <writethedocs:documentarians>`?
-  Check out `Write the Docs <https://www.writethedocs.org/>`_ and
-  :doc:`its Slack workspace <writethedocs:slack>`.
-- Do you want to contribute to Read the Docs?
-  We greatly appreciate it! Check out :doc:`rtd-dev:contribute`.
-
-Happy documenting!
-
+kkj
