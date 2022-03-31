@@ -1,0 +1,18 @@
+[project]
+name = "drtest"
+description = "This is a test module that currently performs data reduction on arrays by different methods."
+version = "0.0.1"
+authors = [
+    { name = "MS44neurp"}
+]
+dependencies = [
+        "numpy ~= 1.19",
+        "matplotlib ~= 3.3.3",
+        "pyabf ~= 2.3.5",
+        "check-manifest ~= 0.47"
+]
+
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
