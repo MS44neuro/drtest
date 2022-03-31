@@ -11,8 +11,3 @@ dependencies = [
         "pyabf ~= 2.3.5",
         "check-manifest ~= 0.47"
 ]
-
-
-[build-system]
-build-backend = "flit_core.buildapi"
-requires = ["flit_core >=3.2,<4"]
