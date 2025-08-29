@@ -1,7 +1,7 @@
 # drtest:
 ## _Data reduction test module_
 
-This is a test module that can perform data reduction in several ways.
+This is a module that can perform data reduction in several ways.
 
 ## Features
 
@@ -33,4 +33,5 @@ xmin, ymin = da.data_reduction(method='min', reduction_factor=4)
 xmax, ymax = da.data_reduction(method='max', reduction_factor=4)
 xminmax, yminmax = da.data_reduction(method='min/max', reduction_factor=4)
 ```
+
 
